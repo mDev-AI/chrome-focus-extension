@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Background shield -->
+  <path fill="#4285F4" d="M256 16L50 96v160c0 180 120 224 206 240 86-16 206-60 206-240V96L256 16z"/>
+  
+  <!-- Inner shield -->
+  <path fill="#FFFFFF" d="M256 48L90 116v140c0 150 100 190 166 204 66-14 166-54 166-204V116L256 48z"/>
+  
+  <!-- YouTube play button symbol -->
+  <path fill="#FF0000" d="M256 100c-77.2 0-140 62.8-140 140s62.8 140 140 140 140-62.8 140-140-62.8-140-140-140z"/>
+  
+  <!-- Focus eye symbol -->
+  <path fill="#FFFFFF" d="M256 150c-50 0-90 40-90 90s40 90 90 90 90-40 90-90-40-90-90-90z"/>
+  
+  <!-- Eye pupil -->
+  <path fill="#34A853" d="M256 190c-27.6 0-50 22.4-50 50s22.4 50 50 50 50-22.4 50-50-22.4-50-50-50z"/>
+  
+  <!-- Focus lines -->
+  <path stroke="#FFFFFF" stroke-width="10" fill="none" d="M156 240H106M356 240h50M256 140V90M256 390v-50"/>
+</svg> 

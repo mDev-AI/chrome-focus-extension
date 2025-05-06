@@ -1,0 +1,117 @@
+/* YouTube Focus Fortress - CSS Nuclear Option */
+
+/* Hide the homepage content and recommendations */
+ytd-rich-grid-renderer, 
+ytd-reel-shelf-renderer,
+ytd-rich-section-renderer,
+ytd-shelf-renderer {
+  display: none !important;
+}
+
+/* Hide Shorts, Reels, Stories */
+ytd-guide-entry-renderer[endpoint*="shorts"],
+ytd-mini-guide-entry-renderer[endpoint*="shorts"],
+ytd-reel-item-renderer,
+ytd-reel-video-renderer {
+  display: none !important;
+}
+
+/* Hide Trending/Explore/Channels in sidebar */
+ytd-guide-section-renderer ytd-guide-entry-renderer:not([endpoint*="library"], [endpoint*="history"], [endpoint*="subscriptions"]),
+ytd-mini-guide-entry-renderer:not([endpoint*="library"], [endpoint*="history"], [endpoint*="subscriptions"]) {
+  display: none !important;
+}
+
+/* Hide endscreen recommendations and autoplay */
+.ytp-endscreen-content,
+.ytp-autonav-endscreen-countdown-container {
+  display: none !important;
+}
+
+/* Hide related videos sidebar */
+ytd-watch-next-secondary-results-renderer {
+  display: none !important;
+}
+
+/* Hide comments section */
+ytd-comments {
+  display: none !important;
+}
+
+/* Hide playlist suggestions */
+ytd-playlist-panel-renderer {
+  display: none !important;
+}
+
+/* Hide channel content promotions */
+#related {
+  display: none !important;
+}
+
+/* Hide notifications */
+ytd-notification-topbar-button-renderer,
+ytd-button-renderer[id="button"][class="style-scope ytd-masthead"] {
+  display: none !important;
+}
+
+/* Keep essential controls visible */
+.ytp-chrome-controls {
+  display: flex !important;
+}
+
+/* Custom Focus UI */
+/* Floating Control Center */
+.focus-fortress-control {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: rgba(33, 33, 33, 0.85);
+  border-radius: 8px;
+  padding: 12px;
+  z-index: 9999;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Minimalist Overlay */
+.focus-progress-overlay {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(to right, #4285f4, #34a853);
+  z-index: 9999;
+  transform-origin: left;
+}
+
+/* Make home page blank */
+body[path="/"]:not([search]) #content {
+  display: none !important;
+}
+
+/* Clean up search page */
+body[path="/results"] ytd-video-renderer:not(.focus-approved) {
+  opacity: 0.6;
+  transition: opacity 0.2s;
+}
+
+body[path="/results"] ytd-video-renderer:not(.focus-approved):hover {
+  opacity: 1;
+}
+
+/* Only show essential elements on watch page */
+body[path="/watch"] #below {
+  max-width: 800px !important;
+  margin: 0 auto !important;
+}
+
+/* Hide all YouTube premium upsell banners */
+ytd-banner-promo-renderer,
+tp-yt-paper-dialog {
+  display: none !important;
+}
+
+/* Containment for performance */
+ytd-app {
+  contain: strict;
+} 

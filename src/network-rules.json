@@ -1,0 +1,59 @@
+[
+  {
+    "id": 10001,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*://www.youtube.com/youtubei/v1/next*",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 10002,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*://www.youtube.com/get_video_info*",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 10003,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*://www.youtube.com/youtubei/v1/browse*",
+      "resourceTypes": ["xmlhttprequest"],
+      "excludedInitiatorDomains": ["www.youtube.com"],
+      "excludedRequestDomains": ["youtube.com"]
+    }
+  },
+  {
+    "id": 10004,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*://www.youtube.com/youtubei/v1/guide*",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 10005,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "*://www.youtube.com/youtubei/v1/reel/reel_watch_sequence*",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  }
+] 

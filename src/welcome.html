@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to YouTube Focus Fortress</title>
+  <style>
+    :root {
+      --primary-color: #1a73e8;
+      --secondary-color: #34a853;
+      --text-color: #202124;
+      --text-secondary: #5f6368;
+      --bg-color: #ffffff;
+      --bg-secondary: #f8f9fa;
+      --border-color: #dadce0;
+    }
+    
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: var(--text-color);
+      background-color: var(--bg-color);
+      line-height: 1.6;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    
+    .logo {
+      width: 120px;
+      height: 120px;
+      margin-bottom: 20px;
+    }
+    
+    h1 {
+      font-size: 32px;
+      font-weight: 500;
+      margin: 0 0 10px 0;
+      color: var(--primary-color);
+    }
+    
+    .tagline {
+      font-size: 18px;
+      color: var(--text-secondary);
+      margin: 0;
+    }
+    
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin: 50px 0;
+    }
+    
+    .feature {
+      background-color: var(--bg-secondary);
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+    
+    .feature h3 {
+      font-size: 18px;
+      margin-top: 0;
+      color: var(--primary-color);
+    }
+    
+    .feature-icon {
+      font-size: 32px;
+      margin-bottom: 15px;
+      color: var(--secondary-color);
+    }
+    
+    .getting-started {
+      background-color: var(--bg-secondary);
+      padding: 30px;
+      border-radius: 8px;
+      margin: 40px 0;
+    }
+    
+    .getting-started h2 {
+      margin-top: 0;
+      color: var(--primary-color);
+    }
+    
+    .step {
+      margin-bottom: 20px;
+    }
+    
+    .step-number {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      background-color: var(--primary-color);
+      color: white;
+      text-align: center;
+      line-height: 30px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    
+    .cta {
+      text-align: center;
+      margin: 50px 0 30px;
+    }
+    
+    .button {
+      display: inline-block;
+      background-color: var(--primary-color);
+      color: white;
+      padding: 12px 24px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background-color 0.2s;
+    }
+    
+    .button:hover {
+      background-color: #0d5bcd;
+    }
+    
+    .note {
+      font-size: 14px;
+      color: var(--text-secondary);
+      text-align: center;
+      margin-top: 40px;
+    }
+    
+    footer {
+      border-top: 1px solid var(--border-color);
+      padding-top: 20px;
+      margin-top: 40px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--text-secondary);
+    }
+    
+    footer a {
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="assets/icon128.png" alt="YouTube Focus Fortress Logo" class="logo">
+      <h1>Welcome to YouTube Focus Fortress</h1>
+      <p class="tagline">Transform YouTube into a distraction-free learning platform</p>
+    </header>
+    
+    <section class="features">
+      <div class="feature">
+        <div class="feature-icon">🛡️</div>
+        <h3>Total Feed Elimination</h3>
+        <p>Say goodbye to endless scrolling. We've eliminated the recommendation feeds, shorts, and other attention-stealing features.</p>
+      </div>
+      
+      <div class="feature">
+        <div class="feature-icon">🧠</div>
+        <h3>Search-First Ecosystem</h3>
+        <p>Use YouTube with intention. Find exactly what you need through search without falling into the rabbit hole.</p>
+      </div>
+      
+      <div class="feature">
+        <div class="feature-icon">⏱️</div>
+        <h3>Focus Timer Integration</h3>
+        <p>Built-in Pomodoro timer helps you maintain productivity while watching educational content.</p>
+      </div>
+    </section>
+    
+    <section class="getting-started">
+      <h2>Getting Started in 3 Simple Steps</h2>
+      
+      <div class="step">
+        <span class="step-number">1</span>
+        <strong>Visit YouTube</strong> - Go to YouTube and notice how the distracting elements are now removed. You'll see a clean, minimal interface.
+      </div>
+      
+      <div class="step">
+        <span class="step-number">2</span>
+        <strong>Search with Purpose</strong> - Use the search function to find specific videos rather than browsing the feed.
+      </div>
+      
+      <div class="step">
+        <span class="step-number">3</span>
+        <strong>Enable Focus Mode</strong> - When watching educational content, use the floating control panel to start a focus timer and adjust playback speed.
+      </div>
+    </section>
+    
+    <div class="cta">
+      <a href="https://youtube.com" class="button">Start Using YouTube Focused</a>
+    </div>
+    
+    <p class="note">
+      <strong>Pro Tip:</strong> For the best experience, we recommend using the extension for educational content and focused learning sessions. You can temporarily disable specific features in the extension popup if needed.
+    </p>
+    
+    <footer>
+      <p>YouTube Focus Fortress | Version 1.0.0</p>
+      <p>
+        <a href="https://github.com/yourusername/youtube-focus-fortress" target="_blank">GitHub</a> | 
+        <a href="#" id="open-options">Settings</a>
+      </p>
+    </footer>
+  </div>
+  
+  <script>
+    document.getElementById('open-options').addEventListener('click', function(e) {
+      e.preventDefault();
+      chrome.runtime.openOptionsPage();
+    });
+  </script>
+</body>
+</html> 

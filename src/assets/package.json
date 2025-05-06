@@ -1,0 +1,12 @@
+{
+  "name": "youtube-focus-fortress-icons",
+  "version": "1.0.0",
+  "description": "Icon generator for YouTube Focus Fortress",
+  "private": true,
+  "scripts": {
+    "generate": "node generate-icons.js"
+  },
+  "dependencies": {
+    "sharp": "^0.32.1"
+  }
+} 
